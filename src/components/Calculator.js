@@ -50,7 +50,23 @@ const Calculator = () => (
         </button>
       </section>
 
-      <section className="calc-operators">Lorem ipsum dolor sit amet.</section>
+      <section className="calc-operators">
+        <button id="btn-four" className="btn" type="button">
+          /
+        </button>
+        <button id="btn-four" className="btn" type="button">
+          *
+        </button>
+        <button id="btn-four" className="btn" type="button">
+          -
+        </button>
+        <button id="btn-four" className="btn" type="button">
+          +
+        </button>
+        <button id="btn-four" className="btn" type="button">
+          =
+        </button>
+      </section>
     </div>
   </main>
 );

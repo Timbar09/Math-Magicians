@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
-
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -12,6 +10,7 @@ html {
 }
 
 body {
+  --color-orange: tomato;
   --color-dark: rgb(24, 24, 24);
   --color-dark-grey: rgb(81, 81, 81);
   --color-grey: rgb(130, 130, 130);
@@ -22,7 +21,8 @@ body {
   margin: 0;
   padding: 0;
   font-size: 0.85em;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: sans-serif;
+  font-weight: 400;
   color: var(--color-dark-grey);
   background-color: var(--color-light);
 }
