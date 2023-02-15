@@ -1,4 +1,6 @@
 import '../calculator.css';
+import operate from '../logic/operate';
+import calculate from '../logic/calculate';
 
 const Calculator = () => (
   <main className="calculator">
