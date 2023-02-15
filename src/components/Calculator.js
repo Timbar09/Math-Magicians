@@ -1,76 +1,53 @@
 import '../calculator.css';
-import operate from '../logic/operate';
-import calculate from '../logic/calculate';
 
-const Calculator = () => (
-  <main className="calculator">
-    <header className="calc-output">0</header>
+const Calculator = () => {
+  const btnNames = [
+    'AC',
+    '+/-',
+    '%',
+    '1',
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '0',
+    '.',
+    '÷',
+    '×',
+    '-',
+    '+',
+    '=',
+  ];
+  const numbers = btnNames.slice(0, 14);
+  const operators = btnNames.slice(14);
 
-    <div className="calc-grid">
-      <section className="calc-numbers">
-        <button id="btn-ac" className="btn" type="button">
-          AC
-        </button>
-        <button id="btn-minus-plus" className="btn" type="button">
-          +/-
-        </button>
-        <button id="btn-percentage" className="btn" type="button">
-          %
-        </button>
-        <button id="btn-one" className="btn" type="button">
-          1
-        </button>
-        <button id="btn-two" className="btn" type="button">
-          2
-        </button>
-        <button id="btn-three" className="btn" type="button">
-          3
-        </button>
-        <button id="btn-four" className="btn" type="button">
-          4
-        </button>
-        <button id="btn-five" className="btn" type="button">
-          5
-        </button>
-        <button id="btn-six" className="btn" type="button">
-          6
-        </button>
-        <button id="btn-seven" className="btn" type="button">
-          7
-        </button>
-        <button id="btn-eight" className="btn" type="button">
-          8
-        </button>
-        <button id="btn-nine" className="btn" type="button">
-          9
-        </button>
-        <button id="btn-zero" className="btn" type="button">
-          0
-        </button>
-        <button id="btn-period" className="btn" type="button">
-          .
-        </button>
-      </section>
+  return (
+    <main className="calculator">
+      <header className="calc-output">0</header>
 
-      <section className="calc-operators">
-        <button id="btn-four" className="btn" type="button">
-          /
-        </button>
-        <button id="btn-four" className="btn" type="button">
-          *
-        </button>
-        <button id="btn-four" className="btn" type="button">
-          -
-        </button>
-        <button id="btn-four" className="btn" type="button">
-          +
-        </button>
-        <button id="btn-four" className="btn" type="button">
-          =
-        </button>
-      </section>
-    </div>
-  </main>
-);
+      <div className="calc-grid">
+        <section className="calc-numbers">
+          {numbers.map((number) => (
+            <button key={number} className={`btn btn-${number}`} type="button">
+              {number}
+            </button>
+          ))}
+        </section>
+
+        <section className="calc-operators">
+          {operators.map((operator) => (
+            <button key={operator} className={`btn btn-${operator}`} type="button">
+              {operator}
+            </button>
+          ))}
+        </section>
+      </div>
+    </main>
+  );
+};
 
 export default Calculator;

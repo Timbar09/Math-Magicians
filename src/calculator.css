@@ -39,6 +39,7 @@
 .btn {
   display: block;
   padding: 1em;
+  font-family: inherit;
   font-size: 1.25em;
   color: inherit;
   width: 100%;
@@ -59,6 +60,6 @@
   background-color: var(--color-orange);
 }
 
-#btn-zero {
+.btn-0 {
   grid-column: 1/3;
 }
