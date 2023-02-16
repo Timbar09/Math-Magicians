@@ -37,9 +37,19 @@ const Calculator = () => {
     setState(calculate(state, btnName));
   };
 
+  const updateOutput = () => {
+    const { total, next, operator } = state;
+
+    if (operator) return `${total ?? '0'} ${operator} ${next ?? ''}`;
+
+    if (next) return next;
+
+    return total || 0;
+  };
+
   return (
     <main className="calculator">
-      <header className="calc-output">{state.total || state.next || 0}</header>
+      <header className="calc-output">{updateOutput()}</header>
 
       <div className="calc-grid">
         <section className="calc-numbers">
