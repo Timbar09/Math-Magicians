@@ -1,4 +1,6 @@
 import '../calculator.css';
+import { useState } from 'react';
+import calculate from '../logic/calculate';
 
 const Calculator = () => {
   const btnNames = [
@@ -25,14 +27,29 @@ const Calculator = () => {
   const numbers = btnNames.slice(0, 14);
   const operators = btnNames.slice(14);
 
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operator: null,
+  });
+
+  const handleClick = (btnName) => {
+    setState(calculate(state, btnName));
+  };
+
   return (
     <main className="calculator">
-      <header className="calc-output">0</header>
+      <header className="calc-output">{state.total || state.next || 0}</header>
 
       <div className="calc-grid">
         <section className="calc-numbers">
           {numbers.map((number) => (
-            <button key={number} className={`btn btn-${number}`} type="button">
+            <button
+              onClick={() => handleClick(number)}
+              key={number}
+              className={`btn btn-${number}`}
+              type="button"
+            >
               {number}
             </button>
           ))}
@@ -40,7 +57,12 @@ const Calculator = () => {
 
         <section className="calc-operators">
           {operators.map((operator) => (
-            <button key={operator} className={`btn btn-${operator}`} type="button">
+            <button
+              onClick={() => handleClick(operator)}
+              key={operator}
+              className={`btn btn-${operator}`}
+              type="button"
+            >
               {operator}
             </button>
           ))}
