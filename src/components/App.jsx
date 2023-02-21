@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import Home from '../routes/Home';
 import CalcPage from '../routes/CalcPage';
 import Quote from '../routes/Quote';
-import NotMatch from '@/routes/NotMatch';
+import NotMatch from '../routes/NotMatch';
 
 const App = () => (
   <Routes>
