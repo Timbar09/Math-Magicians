@@ -1,5 +1,5 @@
-import Calculator from './components/Calculator';
-import './App.css';
+import Calculator from './Calculator';
+import '../styles/App.css';
 
 const App = () => (
   <div className="App">
