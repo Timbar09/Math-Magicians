@@ -14,7 +14,7 @@ const Navbar = () => (
         <NavLink
           to={links[0].path}
           className={styles.logo}
-          style={{ backgroundColor: 'transparent' }}
+          style={{ backgroundColor: 'transparent', borderTop: 'none' }}
         >
           Math MAgicians
         </NavLink>

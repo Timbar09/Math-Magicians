@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  --color-orange: tomato;
+  --color-orange: rgb(255, 98, 71);
   --color-dark: rgb(24, 24, 24);
   --color-dark-grey: rgb(81, 81, 81);
   --color-grey: rgb(130, 130, 130);
@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 0.95em;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   font-weight: 400;
   color: var(--color-dark-grey);
   background-color: var(--color-light);
@@ -69,4 +69,5 @@ a {
 .active {
   color: var(--color-dark);
   background-color: var(--color-light);
+  border-top: solid 3px var(--color-dark);
 }
