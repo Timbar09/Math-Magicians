@@ -1,0 +1,19 @@
+.text {
+  margin-top: 3rem;
+}
+
+.title {
+  margin-top: 0;
+}
+
+@media (min-width: 64em) {
+  .text {
+    max-width: 28rem;
+  }
+
+  .grid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
