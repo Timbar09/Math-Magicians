@@ -48,7 +48,7 @@ const Calculator = () => {
   };
 
   return (
-    <main className="calculator">
+    <div className="calculator">
       <header className="calc-output">{updateOutput()}</header>
 
       <div className="calc-grid">
@@ -78,7 +78,7 @@ const Calculator = () => {
           ))}
         </section>
       </div>
-    </main>
+    </div>
   );
 };
 
