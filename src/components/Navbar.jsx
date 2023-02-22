@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import styles from '../styles/Navbar.module.css';
 
 const links = [
@@ -10,16 +11,25 @@ const Navbar = () => (
   <header className={styles.header}>
     <nav className={`${styles.navbar} container padding-x`}>
       <span>
-        <a href={links[0].path} className={styles.logo}>
+        <NavLink
+          to={links[0].path}
+          className={styles.logo}
+          style={{ backgroundColor: 'transparent' }}
+        >
           Math MAgicians
-        </a>
+        </NavLink>
       </span>
       <ul className={styles['nav-links']}>
         {links.map((link) => (
           <li key={link.text}>
-            <a href={link.path} className={styles['nav-link']}>
+            <NavLink
+              to={link.path}
+              className={`${({ isActive }) => (isActive ? 'active' : undefined)} ${
+                styles['nav-link']
+              }`}
+            >
               {link.text}
-            </a>
+            </NavLink>
           </li>
         ))}
       </ul>

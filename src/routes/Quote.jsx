@@ -22,11 +22,13 @@ const quotes = [
   'Time is the king of all men, he is their parent and their grave, and gives them what he will and not what they crave. - Pericles',
   "You might feel dumb asking questions, but you look dumber when you don't get it because you failed to ask.",
 ];
-const quote = quotes[Math.floor(Math.random() * quotes.length + 1)];
+
+const quotesRange = quotes.length + 1;
+const quoteText = quotes[Math.floor(Math.random() * quotesRange)];
 
 const Quote = () => (
   <main style={mainStyles} className="container padding">
-    <p style={quoteStyles}>{`"${quote}"`}</p>
+    <p style={quoteStyles}>{`"${quoteText}"`}</p>
   </main>
 );
 
