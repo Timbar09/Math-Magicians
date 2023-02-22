@@ -7,20 +7,24 @@ const links = [
 ];
 
 const Navbar = () => (
-  <nav className={`${styles.navbar} container padding`}>
-    <span>
-      <a href={links[0].path} className="logo">
-        Math MAgicians
-      </a>
-    </span>
-    <ul className={styles.links}>
-      {links.map((link) => (
-        <li key={link.text}>
-          <a href={link.path}>{link.text}</a>
-        </li>
-      ))}
-    </ul>
-  </nav>
+  <header className={styles.header}>
+    <nav className={`${styles.navbar} container padding-x`}>
+      <span>
+        <a href={links[0].path} className={styles.logo}>
+          Math MAgicians
+        </a>
+      </span>
+      <ul className={styles['nav-links']}>
+        {links.map((link) => (
+          <li key={link.text}>
+            <a href={link.path} className={styles['nav-link']}>
+              {link.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  </header>
 );
 
 export default Navbar;

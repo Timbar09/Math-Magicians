@@ -1,0 +1,28 @@
+.header {
+  background-color: var(--color-white);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--color-dark);
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  padding: 1.5rem 0.75rem;
+}
+
+.nav-link:hover {
+  color: var(--color-dark);
+}
