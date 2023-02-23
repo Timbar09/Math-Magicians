@@ -1,0 +1,581 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calculator Builds the snapchot of the Calculator component safely 1`] = `
+<div
+  className="calculator"
+>
+  <header
+    className="calc-output"
+  >
+    0
+  </header>
+  <div
+    className="calc-grid"
+  >
+    <section
+      className="calc-numbers"
+    >
+      <button
+        className="btn btn-AC"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="btn btn-+/-"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="btn btn-%"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="btn btn-1"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="btn btn-2"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="btn btn-3"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="btn btn-4"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="btn btn-5"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="btn btn-6"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="btn btn-7"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="btn btn-8"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="btn btn-9"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="btn btn-0"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="btn btn-."
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+    </section>
+    <section
+      className="calc-operators"
+    >
+      <button
+        className="btn btn-÷"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className="btn btn-×"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+      <button
+        className="btn btn--"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className="btn btn-+"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="btn btn-="
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`Calculator Builds the snapchot of the Navbar component safely 1`] = `
+<header
+  className="header"
+>
+  <nav
+    className="navbar container padding-x"
+  >
+    <span>
+      <a
+        aria-current="page"
+        className="logo active"
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "transparent",
+            "borderTop": "none",
+          }
+        }
+      >
+        Math MAgicians
+      </a>
+    </span>
+    <ul
+      className="nav-links"
+    >
+      <li>
+        <a
+          aria-current="page"
+          className="({
+            isActive
+          }) => isActive ? 'active' : undefined nav-link active"
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          className="({
+            isActive
+          }) => isActive ? 'active' : undefined nav-link"
+          href="/calculator"
+          onClick={[Function]}
+        >
+          Calculator
+        </a>
+      </li>
+      <li>
+        <a
+          className="({
+            isActive
+          }) => isActive ? 'active' : undefined nav-link"
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+`;
+
+exports[`Calculator Builds the snapchot of the Quote component safely 1`] = `
+<main
+  className="container padding"
+  style={
+    Object {
+      "display": "grid",
+      "height": "100vh",
+      "maxHeight": "25rem",
+      "placeItems": "center",
+    }
+  }
+>
+  <p
+    style={
+      Object {
+        "fontSize": "1.25rem",
+        "margin": "auto",
+        "maxWidth": "80%",
+      }
+    }
+  >
+    "To a disciple who was forever complaining about others, the Master said, ‘If it is peace you want, seek to change yourself, not other people. It is easier to protect your feet with slippers than to carpet the whole of the earth.’ - Anthony de Mello"
+  </p>
+</main>
+`;
+
+exports[`Calculator Builds the snapchot of the home component safely 1`] = `
+<main>
+  <div
+    className="container padding"
+  >
+    <h1>
+      Welcome to our page
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi vitae delectus tempore architecto eum accusamus eaque optio nemo unde quia officia iste, aspernatur suscipit eligendi. Minima minus magni excepturi dolore?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatibus dolorum soluta adipisci facere quae dolore corporis esse deleniti quo beatae, molestias minus blanditiis et voluptatum odit assumenda quibusdam! Corporis, exercitationem vitae explicabo aliquam dolorum inventore eius expedita, aliquid tempora eum delectus aspernatur animi alias.
+    </p>
+  </div>
+</main>
+`;
+
+exports[`Calculator Matches DOM Snapshot 1`] = `
+<div
+  className="calculator"
+>
+  <header
+    className="calc-output"
+  >
+    0
+  </header>
+  <div
+    className="calc-grid"
+  >
+    <section
+      className="calc-numbers"
+    >
+      <button
+        className="btn btn-AC"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="btn btn-+/-"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="btn btn-%"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="btn btn-1"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="btn btn-2"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="btn btn-3"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="btn btn-4"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="btn btn-5"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="btn btn-6"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="btn btn-7"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="btn btn-8"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="btn btn-9"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="btn btn-0"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="btn btn-."
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+    </section>
+    <section
+      className="calc-operators"
+    >
+      <button
+        className="btn btn-÷"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className="btn btn-×"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+      <button
+        className="btn btn--"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className="btn btn-+"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="btn btn-="
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`Calculator matches DOM Snapshot 1`] = `
+<div
+  className="calculator"
+>
+  <header
+    className="calc-output"
+  >
+    0
+  </header>
+  <div
+    className="calc-grid"
+  >
+    <section
+      className="calc-numbers"
+    >
+      <button
+        className="btn btn-AC"
+        onClick={[Function]}
+        type="button"
+      >
+        AC
+      </button>
+      <button
+        className="btn btn-+/-"
+        onClick={[Function]}
+        type="button"
+      >
+        +/-
+      </button>
+      <button
+        className="btn btn-%"
+        onClick={[Function]}
+        type="button"
+      >
+        %
+      </button>
+      <button
+        className="btn btn-1"
+        onClick={[Function]}
+        type="button"
+      >
+        1
+      </button>
+      <button
+        className="btn btn-2"
+        onClick={[Function]}
+        type="button"
+      >
+        2
+      </button>
+      <button
+        className="btn btn-3"
+        onClick={[Function]}
+        type="button"
+      >
+        3
+      </button>
+      <button
+        className="btn btn-4"
+        onClick={[Function]}
+        type="button"
+      >
+        4
+      </button>
+      <button
+        className="btn btn-5"
+        onClick={[Function]}
+        type="button"
+      >
+        5
+      </button>
+      <button
+        className="btn btn-6"
+        onClick={[Function]}
+        type="button"
+      >
+        6
+      </button>
+      <button
+        className="btn btn-7"
+        onClick={[Function]}
+        type="button"
+      >
+        7
+      </button>
+      <button
+        className="btn btn-8"
+        onClick={[Function]}
+        type="button"
+      >
+        8
+      </button>
+      <button
+        className="btn btn-9"
+        onClick={[Function]}
+        type="button"
+      >
+        9
+      </button>
+      <button
+        className="btn btn-0"
+        onClick={[Function]}
+        type="button"
+      >
+        0
+      </button>
+      <button
+        className="btn btn-."
+        onClick={[Function]}
+        type="button"
+      >
+        .
+      </button>
+    </section>
+    <section
+      className="calc-operators"
+    >
+      <button
+        className="btn btn-÷"
+        onClick={[Function]}
+        type="button"
+      >
+        ÷
+      </button>
+      <button
+        className="btn btn-×"
+        onClick={[Function]}
+        type="button"
+      >
+        ×
+      </button>
+      <button
+        className="btn btn--"
+        onClick={[Function]}
+        type="button"
+      >
+        -
+      </button>
+      <button
+        className="btn btn-+"
+        onClick={[Function]}
+        type="button"
+      >
+        +
+      </button>
+      <button
+        className="btn btn-="
+        onClick={[Function]}
+        type="button"
+      >
+        =
+      </button>
+    </section>
+  </div>
+</div>
+`;
